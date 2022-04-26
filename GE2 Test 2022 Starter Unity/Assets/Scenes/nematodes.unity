@@ -428,6 +428,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5372656057005222850}
+  ranLength: 20
+  mat: {fileID: 0}
   radius: 50
   count: 5
 --- !u!4 &1024887883
