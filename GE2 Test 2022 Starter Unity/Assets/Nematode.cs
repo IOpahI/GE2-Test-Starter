@@ -16,7 +16,7 @@ public class Nematode : MonoBehaviour
     void Awake()
     {
        
-        ranLength = Random.Range(5, 20);
+        ranLength = Random.Range(5, 30);
 
         for (int i = 0; i < ranLength; i++)
         {
