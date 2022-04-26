@@ -25,9 +25,5 @@ public class NematodeSchool : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

@@ -33,31 +33,16 @@ public class Nematode : MonoBehaviour
             }
 
             float colorval = 1f / length * i;
-            mesh.material.color = Color.HSVToRGB(colorval, 1, 1);
+            mesh.material.color = Color.HSVToRGB(colorval, 1f, 1f);
 
 
             wormSpheres.transform.SetParent(transform);
             wormSpheres.transform.position = new Vector3(0, 0, i);
             wormSpheres.transform.localScale += new Vector3(0, 1, 1);
 
-            
 
-       
-           
 
         }
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
