@@ -428,8 +428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5372656057005222850}
-  ranLength: 20
-  mat: {fileID: 0}
   radius: 50
   count: 5
 --- !u!4 &1024887883
@@ -474,6 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027b60df30e489941a1246b78858d5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ranLength: 20
+  mat: {fileID: 2100000, guid: 6e4fc4decf74e1c45909682693921aee, type: 2}
   length: 20
   material: {fileID: 2100000, guid: 6e4fc4decf74e1c45909682693921aee, type: 2}
 --- !u!114 &5372656057005222719
