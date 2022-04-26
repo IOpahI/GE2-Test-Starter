@@ -15,34 +15,37 @@ public class Nematode : MonoBehaviour
 
     void Awake()
     {
-        
+       
+        ranLength = Random.Range(5, 20);
 
-        for (int i = 1; i < ranLength; i++)
+        for (int i = 0; i < ranLength; i++)
         {
-            
+
             GameObject wormSpheres = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             MeshRenderer mesh = wormSpheres.GetComponent<MeshRenderer>();
-            
-            wormSpheres.transform.position = new Vector3(0, 0, i * 2);
-            wormSpheres.transform.SetParent(transform);
-            float colorval = (1f / length * (i-1));
-            mesh.material.color = Color.HSVToRGB(colorval, 1, 1);
 
-
-
-
-            if( i <= 1)
+            if (i <= 0)
             {
                 wormSpheres.AddComponent<Boid>();
                 wormSpheres.AddComponent<ObstacleAvoidance>();
                 wormSpheres.AddComponent<Constrain>();
                 wormSpheres.AddComponent<NoiseWander>();
             }
+
+            float colorval = 1f / length * i;
+            mesh.material.color = Color.HSVToRGB(colorval, 1, 1);
+
+
+            wormSpheres.transform.SetParent(transform);
+            wormSpheres.transform.position = new Vector3(0, 0, i);
+            wormSpheres.transform.localScale += new Vector3(0, 1, 1);
+
+            
+
+       
+           
+
         }
-
-        
-
-
     }
 
 

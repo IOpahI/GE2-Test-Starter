@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5372656057005222850}
-  radius: 50
+  radius: 211
   count: 5
 --- !u!4 &1024887883
 Transform:
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsets: []
   children: []
-  damping: 10
+  damping: 0
 --- !u!1 &5372656057005222850
 GameObject:
   m_ObjectHideFlags: 0
